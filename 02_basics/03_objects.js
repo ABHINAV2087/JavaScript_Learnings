@@ -17,6 +17,7 @@ const Jsuser = {
     lastLoginDays: ["monday","tuesday"]
 }
 
+console.log(Jsuser.lastLoginDays[0]);
 console.log(Jsuser.name);
 console.log(Jsuser[mySym]);
 
@@ -24,10 +25,14 @@ console.log(Jsuser["name"]);
 
 Jsuser.age = 20;//change krne k liye 
 
-Object.freeze(Jsuser) // change hone se rokne ke liye
+// Object.freeze(Jsuser) // change hone se rokne ke liye
 
 Jsuser.greeting = function(){
     console.log("hello user !!");
 }
+Jsuser.greeting2 = function(){
+    console.log(`hello js user, ${this.name}`);
+}// jab bhi same object ko reference krna hai tab hum this ka use kr skte hai 
 
 console.log(Jsuser.greeting());
+console.log(Jsuser.greeting2());
