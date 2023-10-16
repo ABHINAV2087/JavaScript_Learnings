@@ -1,0 +1,111 @@
+=> javascript single threaded hoti hai 
+
+=> javascript execution context - defines the environment in which the code is executed 
+                                  and includes things like the scope chain, variable object, 
+                                  this value, and more.
+
+ --------three main types of execution contexts-------
+        
+             1. Global Execution Context:
+                - The global execution context is the default context. 
+                  It's the environment in which the code outside of any function is executed.
+
+                - It includes the global object (in a web browser, it's window), 
+                  a this value (in a web browser, it's also window), and 
+                  a reference to the outer environment (which is null in the global context).
+        
+
+
+             2. Function Execution Context:
+                - When a function is called, a new execution context is created for that function. 
+                  This includes its own scope chain, variable object, and this value.
+
+                - The scope chain is formed by the function's variable object and the variable
+                  objects of its parent contexts (including the global context).
+
+                - The this value depends on how the function is called (more on that later).
+        
+             3. Eval Function Context:
+
+                - In JavaScript, eval() can be used to execute code in the current scope or 
+                  in the global scope. When eval() is executed, a new execution context is 
+                  created.
+-------------------------------------------------------------------------------------------------------------------
+
+----------------------------------------------how js code is executed----------------------------------------------
+
+1. memory creation phase 
+2. execution phase
+
+           let val1 = 10
+           let val2 = 5
+           function addnum(num1+num2){
+               let total = num1+num2
+               return total
+           }
+           
+           let result1 = addnum(val1,val2)
+           let result2 = addnum(10,2)
+
+step1 => sbse pehle global execution hota hai aur isko this ke andar allocate krenge 
+
+step2 => memory creation phase 
+
+            val1 = undefined 
+            val2 = undefined
+
+            addnum = definition 
+
+            result1 = undefined
+            result2 = undefined
+
+step3 => execution phase 
+
+            val1 = 10
+            val2 = 5
+
+            addnum = definition 
+
+            result1 = 
+                       ===================== =================================================
+            result2 =                      ||                                                 ||
+                                           ||  new variable environment + execution thread    ||
+                                           ||  // har baar nya bnta hai jitni bhi baar        || =========== >  kaam hone ke baad delete bhi ho jata hai 
+                                           ||     functions execute hote hai                  ||
+                                           ||                                                 ||
+                                             =================================================
+                                                                  ||
+                                                                  ||
+                                                                  ||
+                                             =================================================  
+                                             ||                                              ||
+                                             ||                                              ||
+                                        MEMORY PHASE                                    Execution Phase 
+
+                                        val1 = undefined                                  val1 = 10
+                                        val2 = undefined                                  val2 = 5
+                                        total = undefined                                 total = 15
+                                                            
+
+----------------------------------------------------------------------------------------------------------
+
+
+
+
+
+------------------------------------------CALL STACK ------------------------------------------------------
+
+-- The call stack is a data structure that keeps track of the current execution context. 
+  It follows a Last-In, First-Out (LIFO) order, which means the most recently added context is the 
+  first to be removed.
+
+-- When a function is called, its context is pushed onto the stack. When a function finishes executing, 
+  its context is popped off the stack, and control returns to the context below it.
+
+
+-----------------------------------------------------------------------------------------------------------
+
+------------------------------------------CONTROL-FLOW------------------------------------------------------
+
+
+
