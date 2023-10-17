@@ -115,3 +115,14 @@ Else every thing will be converted to true
 
 
 ---------------------------------- NULLISH COALESCING OPERATOR( ?? )-----------------------
+
+===========================================================================================
+
+
+
+
+------------------------------ HIGHER ORDER functions -------------------------------------
+
+higher-order function is a function that can take one or more functions as 
+arguments and/or return a function as its result. 
+This means that functions are treated as values, just like strings or numbers. 
