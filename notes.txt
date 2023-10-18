@@ -126,3 +126,48 @@ Else every thing will be converted to true
 higher-order function is a function that can take one or more functions as 
 arguments and/or return a function as its result. 
 This means that functions are treated as values, just like strings or numbers. 
+
+
+
+==============================================================================================
+
+---------------------------------- MAPS -----------------------------------------------
+
+// maps iteratable nhi hote
+
+Maps => The Map object holds key-value pairs and remembers the original insertion order of the keys. 
+        Any value (both objects and primitive values) may be used as either a key or a value.
+
+suppose you have to perform a particular task on every member of the array , multiply every element of arrray with 2 
+and then place the answers in the new array and eventually return that new array and that's exactly waht map does
+
+
+
+==============================================================================================
+
+---------------------------------- FILTER -----------------------------------------------
+
+filter => creates a shallow copy of a portion of a given array, filtered down to just the elements 
+          from the given array that pass the test implemented by the provided function.
+
+
+Suppose you have an array and you want to filter out elements in a new array we will use filter 
+let's sat array contains many numbers we want to extract only those numbers which are greater than 5
+we will use filter 
+
+
+==============================================================================================
+
+---------------------------------- REDUCE ----------------------------------------------------
+
+reduce => executes a user-supplied "reducer" callback function on each element of 
+         the array, in order, passing in the return value from the calculation on 
+         the preceding element. The final result of running the reducer across all 
+         elements of the array is a single value.
+
+
+EK array ki saari value par kuch perform karke ek value banane ke liye we use reduce
+
+example => add all value of array, when we add all values , it gives us the sum which is a single value 
+           any such case where we need to convert array into a single value that's where reduce is used 
+

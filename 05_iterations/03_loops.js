@@ -26,3 +26,5 @@ console.log(map1);
 for (const [key , value] of map1) {
     console.log(key,"=",value);
 }
+
+// maps iteratable nhi hote
