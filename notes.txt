@@ -171,3 +171,34 @@ EK array ki saari value par kuch perform karke ek value banane ke liye we use re
 example => add all value of array, when we add all values , it gives us the sum which is a single value 
            any such case where we need to convert array into a single value that's where reduce is used 
 
+==============================================================================================
+
+---------------------------------- DOM ---------------------------------------------------
+
+
+                              
+
+
+                  =================================================
+                ||                                                 ||
+                ||                  WINDOW                         ||
+                ||                                                 || 
+                  =================================================
+                                      ||
+                                      ||
+                  =================================================
+                ||                                                 ||
+                ||                  DOCUMENT                       ||
+                ||                                                 || 
+                  =================================================
+                    ||                                            ||
+         =========================                      =========================
+       ||          HEAD           ||                  ||         BODY            ||
+         =========================                      =========================
+            ||              ||                              ||              ||
+          meta            title                             h1               p
+
+
+
+HTMLCollection me loop nhi laga skte usko pehle array me convert krna pdega lekin nodelist me 
+hum direct loop laga skte hai 
