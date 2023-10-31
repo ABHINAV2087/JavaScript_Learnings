@@ -232,11 +232,15 @@ hum direct loop laga skte hai
 
 ---------------------------------- ASYNC JS  ---------------------------------------------------
 
-## blocking code                                                ## non blocking code                                      
-       |                                                                  |
-  block the flow of                                                does not block execution
-  program                                                                 |
-       |                                                                  |
-  read file sync                                                   read file async
+## blocking code                                                                                      
+  > block the flow of  program                                             
+                                                                       
+  > read file Sync 
+
+
+## non blocking code                                                                                      
+  > does not block the execution                                               
+                                                                                                          
+  > read file Async                                                   
 
   ![Alt text](image.png)
