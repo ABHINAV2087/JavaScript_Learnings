@@ -1,5 +1,6 @@
 => javascript single threaded hoti hai 
-=> javascript synchronous hoti hai 
+
+=> default javascript synchronous hoti hai 
 
 => javascript execution context - defines the environment in which the code is executed 
                                   and includes things like the scope chain, variable object, 
@@ -230,19 +231,59 @@ hum direct loop laga skte hai
 
 ==============================================================================================
 
----------------------------------- ASYNC JS  ---------------------------------------------------
+## ASYNC JS  
 
-## blocking code                                                                                      
+ > sync matlab ek ke baad dusra hoga , jab tak ek command complete na ho dusra shuru nahi hoga 
+
+ > async matlab saare kaam ek sath shuru kardo jiska answer pehle aajye uska jawab dedena 
+ 
+- > ye sare async code hai
+
+  -- > setTimeout
+
+  -- > setInterval
+
+  -- > promises
+
+  -- > fetch
+
+  -- > axios
+   
+  -- > XMLHTTPRequest
+
+> kai baar aapka final code depended hota hai kisi aur ke server par, is case mein humein nahi pata hota ki answer uske server se kab laut kar aayega, to hum kya nahi kr skte is writing sync code, isse nipatne ke liye hum log async code likh dete hai taaki blocking naa ho and jab bhi answer aaye humara answer ke respect mein chalne waala code chal jaaye
+
+> async code ka main motive hota hai ki un cases mein jinmein hume pata nahi code ka answer kitni der mein aayega to jab bhi answer aa jaaye uske answer ke respect mein koi particular code chala dena
+
+> jo bhi main stack par hota hai wo output karta hai and jo bhi side stack par hota hai wo behind the scenes processing kar sakta hai aur jab uski processing complete ho use main stack mein laa kar chalaya jaa sakta hai
+
+> jo main stack me rehta hai uska hi execution hota hai 
+
+> aur jab main stack khali hota hai tab hi side stack ko dekha jayega 
+
+> main stack me sync code rkhenge aur side stack me async ka code rkhenge 
+
+
+
+![Alt text](image-1.png)
+## Blocking Code                                                                                      
   > block the flow of  program                                             
                                                                        
   > read file Sync 
 
 
-## non blocking code                                                                                      
+## Non Blocking Code                                                                                      
   > does not block the execution                                               
                                                                                                           
   > read file Async                                                   
 
-  ![Alt text](image.png)
+  ![](image.png)
 
 
+> <u><b>Event Loop</b></u> responsible hota hai side stack se main stack me code ko lane ke liye 
+
+> <u><b>Call Back</b></u> -> function -> callback humesha ek function hota hai, ye sirf tab chalta hai jab async code ka completion hojaata hai
+
+
+
+I

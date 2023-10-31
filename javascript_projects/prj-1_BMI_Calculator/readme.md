@@ -1,6 +1,6 @@
 ## Project Link
 
-https://codepen.io/abhinav_2003/pen/poGgpGW
+https://codepen.io/abhinav_2003/full/poGgpGW
 
 ## Preview
 
