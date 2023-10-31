@@ -5,7 +5,7 @@
                                   and includes things like the scope chain, variable object, 
                                   this value, and more.
 
- --------three main types of execution contexts-------
+## three main types of execution contexts
         
              1. Global Execution Context:
                 - The global execution context is the default context. 
@@ -33,7 +33,7 @@
                   created.
 -------------------------------------------------------------------------------------------------------------------
 
-----------------------------------------------how js code is executed----------------------------------------------
+## how js code is executed
 
 1. memory creation phase 
 2. execution phase
@@ -94,7 +94,7 @@ step3 => execution phase
 
 
 
-------------------------------------------CALL STACK ------------------------------------------------------
+## CALL STACK 
 
 -- The call stack is a data structure that keeps track of the current execution context. 
   It follows a Last-In, First-Out (LIFO) order, which means the most recently added context is the 
@@ -106,7 +106,7 @@ step3 => execution phase
 
 -----------------------------------------------------------------------------------------------------------
 
-------------------------------------------truthy-falsy values------------------------------------------------------
+## Truthy - Falsy values
 
 Truthy vs falsy 
 
@@ -115,14 +115,14 @@ Truthy vs falsy
 Else every thing will be converted to true 
 
 
----------------------------------- NULLISH COALESCING OPERATOR( ?? )-----------------------
+### NULLISH COALESCING OPERATOR( ?? )
 
-===========================================================================================
-
-
+===========================================
 
 
------------------------------- HIGHER ORDER functions -------------------------------------
+
+
+## HIGHER ORDER functions 
 
 higher-order function is a function that can take one or more functions as 
 arguments and/or return a function as its result. 
@@ -132,7 +132,7 @@ This means that functions are treated as values, just like strings or numbers.
 
 ==============================================================================================
 
----------------------------------- MAPS -----------------------------------------------
+## MAPS 
 
 // maps iteratable nhi hote
 
@@ -146,7 +146,7 @@ and then place the answers in the new array and eventually return that new array
 
 ==============================================================================================
 
----------------------------------- FILTER -----------------------------------------------
+## FILTER 
 
 filter => creates a shallow copy of a portion of a given array, filtered down to just the elements 
           from the given array that pass the test implemented by the provided function.
@@ -159,7 +159,7 @@ we will use filter
 
 ==============================================================================================
 
----------------------------------- REDUCE ----------------------------------------------------
+## REDUCE 
 
 reduce => executes a user-supplied "reducer" callback function on each element of 
          the array, in order, passing in the return value from the calculation on 
@@ -174,7 +174,7 @@ example => add all value of array, when we add all values , it gives us the sum 
 
 ==============================================================================================
 
----------------------------------- DOM ---------------------------------------------------
+## DOM 
 
 
                               
@@ -206,12 +206,12 @@ hum direct loop laga skte hai
 
 ==============================================================================================
 
----------------------------------- events ---------------------------------------------------
+## Events 
 
 * Event propagation in JavaScript refers to the way events move through the different 
   elements in a web page's DOM (Document Object Model).
 
-=> There are two main phases of event propagation:
+## There are two main phases of event propagation:
 
   1.Capturing Phase:
 
@@ -244,3 +244,5 @@ hum direct loop laga skte hai
   > read file Async                                                   
 
   ![Alt text](image.png)
+
+
