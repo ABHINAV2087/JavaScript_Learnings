@@ -25,7 +25,7 @@ body {
     align-items: center;
     background-image: url('https://images.unsplash.com/photo-1557683316-973673baf926?auto=format&fit=crop&q=80&w=1729&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D');
     text-transform: capitalize;
-    gap: 30px;
+    gap: 10px;
 
 }
 #head{
@@ -36,7 +36,7 @@ h1 {
     padding: 10px;
     border-bottom: 2px solid black;
     font-size: 55px;
-    margin-top: 60px;
+    margin-top: 40px;
 }
 
 p {
@@ -77,6 +77,11 @@ label{
     border: 2px solid black;
 }
 #resultarea{
+    display: flex;
+    flex-direction: column;
+    gap: 30px;
+}
+#abc{
     margin-top: 70px;
     display: flex;
     justify-content: space-between;
@@ -90,4 +95,16 @@ h3{
 #resultarea span{
     padding: 2px;
     border-bottom: 3px solid black;
+}
+button{
+    background-color: black;
+    color: aliceblue;
+    border: 2px solid black;
+    padding: 15px 25px;
+    font-size: 15px;
+    border-radius: 30px;
+    
+}
+#mesaage{
+    font-size: 30px;
 }

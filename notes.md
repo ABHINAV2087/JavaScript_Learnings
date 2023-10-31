@@ -1,4 +1,5 @@
 => javascript single threaded hoti hai 
+=> javascript synchronous hoti hai 
 
 => javascript execution context - defines the environment in which the code is executed 
                                   and includes things like the scope chain, variable object, 
@@ -202,3 +203,40 @@ example => add all value of array, when we add all values , it gives us the sum 
 
 HTMLCollection me loop nhi laga skte usko pehle array me convert krna pdega lekin nodelist me 
 hum direct loop laga skte hai 
+
+==============================================================================================
+
+---------------------------------- events ---------------------------------------------------
+
+* Event propagation in JavaScript refers to the way events move through the different 
+  elements in a web page's DOM (Document Object Model).
+
+=> There are two main phases of event propagation:
+
+  1.Capturing Phase:
+
+  > In this phase, the event starts from the outermost element (usually the window object) 
+    and moves towards the target element.
+  > It's like a "pre-processing" phase where elements higher up in the DOM tree get a chance 
+    to intercept the event before it reaches the target element.
+    Bubbling Phase:
+
+  2.Bubbling Phase:
+
+  > Once the event reaches the target element, it then "bubbles up" through the ancestors of the target element.
+  > This is like a "post-processing" phase where elements higher up in the DOM tree get a chance to react to the event
+    after it has been handled by the target element.
+
+
+==============================================================================================
+
+---------------------------------- ASYNC JS  ---------------------------------------------------
+
+## blocking code                                                ## non blocking code                                      
+       |                                                                  |
+  block the flow of                                                does not block execution
+  program                                                                 |
+       |                                                                  |
+  read file sync                                                   read file async
+
+  ![Alt text](image.png)
