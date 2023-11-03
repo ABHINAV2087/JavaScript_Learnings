@@ -1,0 +1,58 @@
+@import url('https://fonts.googleapis.com/css2?family=Patrick+Hand&display=swap');
+
+
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+html,
+body {
+    height: 100%;
+    width: 100%;
+}
+
+#main {
+    height: 100vh;
+    width: 100vw;
+    background-image: url('https://img.freepik.com/free-vector/black-geometric-memphis-social-banner-vector_53876-157880.jpg?w=996&t=st=1699020406~exp=1699021006~hmac=f8e1e74494f54a06275d14e946e27431fca10e37ebeac2baad2d82dc2f52b54e');
+    background-position: center;
+    background-size: cover;
+    padding-top: 70px;
+    font-family: 'Patrick Hand', cursive;
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+}
+#head{
+    display: flex;
+    justify-content: center;
+    
+    align-items: center;
+}
+.search{
+    width: 40vw;
+    padding: 10px 20px;
+    font-size: 18px;
+    text-align: center;
+    background-color: rgba(0, 0, 0, 0.483);
+    border: none;
+    color: white;
+    border-bottom-left-radius: 20px;
+    border-top-left-radius: 20px;
+    
+}
+.search::placeholder{
+    color: white;
+}
+.search-button{
+    padding: 10px 25px;
+    font-size: 16px;
+    border-bottom-right-radius: 20px;
+    border-top-right-radius: 20px;
+}
+#card{
+    display: flex;
+}
