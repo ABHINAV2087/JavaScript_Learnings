@@ -284,6 +284,18 @@ hum direct loop laga skte hai
 
 > <u><b>Call Back</b></u> -> function -> callback humesha ek function hota hai, ye sirf tab chalta hai jab async code ka completion hojaata hai
 
+> <u><b>Call-Back Hell</b></u>  term used to describe a situation in JavaScript where you have a large number of nested callbacks.<br> This happens when you're working with asynchronous code using callbacks, and you have multiple operations that depend on the results of previous operations.
 
+___
+___
 
-I
+# Promises  
+
+Promises in JavaScript are a way to handle asynchronous code, which means code that doesn't necessarily run in the order it appears. <br>
+They make it easier to work with tasks like fetching data from a server, reading a file, or performing other operations that might take some time.
+- > The Promise object represents the eventual completion (or failure) of an asynchronous operation and its resulting value.
+
+#### 3 States in promises
+* <U>pending</U>: initial state, neither fulfilled nor rejected.<br>
+* <U>fulfilled</U>: meaning that the operation was completed successfully.<br>
+* <U>rejected</U>: meaning that the operation failed.<br>
