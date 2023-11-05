@@ -13,8 +13,8 @@ for (const key in myObject) {
 }
 
 
-const programming = ["js","cpp","rb","py"]
+// const programming = ["js","cpp","rb","py"]
 
-for (const key in programming) {
-    console.log(programming[key]);
-}
+// for (const key in programming) {
+//     console.log(programming[key]);
+// }
