@@ -100,3 +100,16 @@ async function consumePromise5(){
     console.log(response);
 }
 consumePromise5()
+
+
+
+// fetch method 
+
+fetch('https://api.github.com/users/abhinav2087')
+.then((response) => {
+    return response.json()
+})
+.then((data) => {
+    console.log(data);
+})
+.catch((error) => console.log(error))

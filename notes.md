@@ -6,7 +6,7 @@
                                   and includes things like the scope chain, variable object, 
                                   this value, and more.
 
-## three main types of execution contexts
+## Three main types of execution contexts
         
              1. Global Execution Context:
                 - The global execution context is the default context. 
@@ -132,6 +132,18 @@ This means that functions are treated as values, just like strings or numbers.
 
 
 ==============================================================================================
+##  IIFE
+
+IIFE Stands For Immediately Invoked Function Expression. It Is
+A Way To Create A Function And Immediately Execute It Without Needing To Call It Later. Here's An Example:
+
+``` javascript 
+
+( function(){
+// wrap function with () and then call it () 
+})();
+```
+==============================================================================================
 
 ## MAPS 
 
@@ -143,7 +155,15 @@ Maps => The Map object holds key-value pairs and remembers the original insertio
 suppose you have to perform a particular task on every member of the array , multiply every element of arrray with 2 
 and then place the answers in the new array and eventually return that new array and that's exactly waht map does
 
+``` javascript
 
+
+const myNums = [1,2,3,4,5,6,7,8,9]
+
+const resultarr = myNums.map( (num) => num + 10 ) 
+
+```
+![Alt text](./images/image-3.png)
 
 ==============================================================================================
 
@@ -157,6 +177,15 @@ Suppose you have an array and you want to filter out elements in a new array we 
 let's sat array contains many numbers we want to extract only those numbers which are greater than 5
 we will use filter 
 
+``` javascript
+
+const myNums = [1,2,3,4,5,6,7,8,9]
+
+let newNums  = myNums.filter( (num)=> num >4 )
+let newNums2 = myNums.filter( (num)=> {
+      return num >4
+})// agar hum scope laga rhe hai to return lgana pdega 
+```
 
 ==============================================================================================
 
@@ -173,6 +202,17 @@ EK array ki saari value par kuch perform karke ek value banane ke liye we use re
 example => add all value of array, when we add all values , it gives us the sum which is a single value 
            any such case where we need to convert array into a single value that's where reduce is used 
 
+``` javascript 
+const myNums = [1,2,3]
+
+const myTotal = myNums.reduce( function(acc, currval){
+    console.log(`Acc: ${acc} and Currval: ${currval}`)
+    return acc + currval
+
+},0)
+
+const myTotal2 = myNums.reduce( (acc,curr) => acc + curr , 0)
+```
 ==============================================================================================
 
 ## DOM 
@@ -265,7 +305,7 @@ hum direct loop laga skte hai
 
 
 
-![Alt text](image-1.png)
+![Alt text](./images/image-1.png)
 ## Blocking Code                                                                                      
   > block the flow of  program                                             
                                                                        
@@ -277,7 +317,7 @@ hum direct loop laga skte hai
                                                                                                           
   > read file Async                                                   
 
-  ![](image.png)
+  ![](./images/image.png)
 
 
 > <u><b>Event Loop</b></u> responsible hota hai side stack se main stack me code ko lane ke liye 
@@ -299,3 +339,99 @@ They make it easier to work with tasks like fetching data from a server, reading
 * <U>pending</U>: initial state, neither fulfilled nor rejected.<br>
 * <U>fulfilled</U>: meaning that the operation was completed successfully.<br>
 * <U>rejected</U>: meaning that the operation failed.<br>
+
+  ![Alt text](./images/image-2.png)
+___
+___
+# JS Fetch() API
+
+
+The fetch() is a modern JavaScript function that simplifies making AJAX requests to retrieve resources from a server.
+<BR>
+It provides a more streamlined and flexible alternative to the traditional
+XMLHttpRequest.<BR>
+Simply used to get data over network, fetch() return as promise and getting a response in a 2-Stage Process
+
+``` javascript
+
+fetch(url)
+.then((response) => response.json()) 
+.then((data) ⇒ {
+  // Code to handle the response data
+})
+.catch((error) ⇒ {
+  // Code to handle any errors that occurred 
+});
+
+```
+
+- >   The fetch() function takes a URL as its parameter and sends a GET request to that URL to fetch the resource.<br>
+
+- >  It returns a Promise that represents the eventual completion (or failure) of the request.
+
+
+- > You can chain .then() methods to handle the response once it's available. In the example, the first .then() extracts the JSON data from the response using the response.json() method.<br>
+
+- > The extracted data is then passed to the second.then() callback function, where you can perform further processing or manipulation.
+
+- > If any errors occur during the request or response, the .catch() method allows you to handle and respond to those errors gracefully.
+
+___
+___
+# OOPs in Javascript
+
+### Object
+- > Collection of properties and method
+
+- > for example => toLowerCase
+
+ #### Why use OOP
+
+ #### Parts of OOP 
+
+  - > <u>Object literal</u> 
+
+      An object literal in JavaScript is a way to create a  collection of related information using curly braces {}. 
+
+    It lets you group together data and functions in one place. 
+
+    ``` javascript
+    // for example
+
+    let person = {
+      name: "John",
+      age: 30,
+      sayHello: function() {
+          console.log("Hello!");
+      }
+    };
+  
+    ```
+
+    - > <u>Constructor function</u> 
+    
+      A constructor function in JavaScript is a special type of function that is used to create and initialize objects.<br>
+       It serves as a blueprint for creating multiple objects with similar properties and methods
+
+    ``` javascript
+    // for example
+
+      function Person(firstName, lastName, age) {
+        this.firstName = firstName;
+        this.lastName = lastName;
+        this.age = age;
+      }
+
+      // Usage:
+      const john = new Person('John', 'Doe', 30);
+      const jane = new Person('Jane', 'Doe', 25);
+  
+    ```
+
+  - Prototypes
+  - Classes
+  - Instances ( new , this )
+
+
+
+
