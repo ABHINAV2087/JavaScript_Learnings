@@ -451,9 +451,9 @@ ___
       * The new object is returned : After the constructor function has been called, if it doesn't return a non-primitive value (object, array, function, etc.), the newly created object is returned.
     
 ____
-  ![Alt text](image.png)
-  ![Alt text](image-1.png)
-  ![Alt text](image-2.png)
+  ![Alt text](./images/image-6.png)
+  ![Alt text](./images/image-5.png)
+  ![Alt text](./images/image-7.png)
        
  - > make an object called human and put properties like canFly , canTalk , willDie
     ``` javascript
@@ -481,8 +481,12 @@ ____
     ```
   - > this line adds all the properties of human in our JsStudents object, so now JsStudent has his properties and it also contains properties of human object, so it inheritsproperties from parent object Human.
 
-  - Classes
-  - Instances ( new , this )
+   ___ 
+- > ### Call and this <u> [Refer here](/09_classes_and_objects\call.js) </u>
+
+  ![Alt text](./images/image-8.png)
+  ![Alt text](./images/image-9.png)
+
 
 
 
