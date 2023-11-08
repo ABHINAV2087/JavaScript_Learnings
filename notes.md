@@ -482,7 +482,7 @@ ____
   - > this line adds all the properties of human in our JsStudents object, so now JsStudent has his properties and it also contains properties of human object, so it inheritsproperties from parent object Human.
 
    ___ 
-- > ### Call and this <u> [Refer here](/09_classes_and_objects\call.js) </u>
+- > ### Call and this <u> [Refer here](/09_classes_and_objects/call.js) </u>
 
   ![Alt text](./images/image-8.png)
   ![Alt text](./images/image-9.png)
