@@ -409,7 +409,7 @@ ___
           console.log("Hello!");
       }
     };
-  
+   
     ```
 
     - > <u>Constructor function</u> 
@@ -457,7 +457,6 @@ ____
        
  - > make an object called human and put properties like canFly , canTalk , willDie
     ``` javascript
-
       let human = {
         name: "abhinav"
         canFly: false,
@@ -482,16 +481,41 @@ ____
   - > this line adds all the properties of human in our JsStudents object, so now JsStudent has his properties and it also contains properties of human object, so it inheritsproperties from parent object Human.
 
    ___ 
-<<<<<<< HEAD:Readme.md
-- > ### Call and this <u> [Refer here](/09_classes_and_objects/call.js) </u>
-=======
 - > ### Call and this <u> [Refer here](./09_classes_and_objects/call.js) </u>
->>>>>>> 18980a80136cf572512698607e8d136c60e7a086:notes.md
 
   ![Alt text](./images/image-8.png)
   ![Alt text](./images/image-9.png)
 
-//////
 
 
 
+_____
+_____
+##  Lexical Scoping 
+
+
+Lexical scoping in JavaScript means that the scope of a variable is determined by its location within the source code. <br>In simpler terms, a variable defined inside a function is only accessible within that function, and not outside of it. The scope is based on where the variable is declared in the code
+
+For example 
+```javascript 
+
+function outerFunction() {
+  let outerVariable = 'I am from outer function';
+
+  function innerFunction() {
+    let innerVariable = 'I am from inner function';
+    console.log(outerVariable); // Accessing outerVariable from outer function
+    console.log(innerVariable); // Accessing innerVariable from inner function
+  }
+
+  innerFunction();
+
+  // Trying to access innerVariable here would result in an error
+}
+
+outerFunction();
+// Trying to access outerVariable here would result in an error
+
+
+```
+- > In this example, `outerVariable` is defined in the `outerFunction`, and `innerVariable` is defined in the `innerFunction`. The inner function has access to both its own variables (`innerVariable`) and the variables from the outer function (`outerVariable`). However, variables defined inside the functions are not accessible outside of their respective functions due to lexical scoping.
