@@ -519,3 +519,8 @@ outerFunction();
 
 ```
 - > In this example, `outerVariable` is defined in the `outerFunction`, and `innerVariable` is defined in the `innerFunction`. The inner function has access to both its own variables (`innerVariable`) and the variables from the outer function (`outerVariable`). However, variables defined inside the functions are not accessible outside of their respective functions due to lexical scoping.
+
+
+##  Closures 
+
+A closure is a feature of JavaScript that allows inner functions to access the outer scope of a function.<br> Closure helps in binding a function to its outer boundary and is created automatically whenever a function is created. 
