@@ -524,3 +524,13 @@ outerFunction();
 ##  Closures 
 
 A closure is a feature of JavaScript that allows inner functions to access the outer scope of a function.<br> Closure helps in binding a function to its outer boundary and is created automatically whenever a function is created. 
+
+##  Temporal Dead Zone
+
+Temporal Dead Zone is the period of time during which the let and const declarations cannot be accessed.
+
+Temporal Dead Zone starts when the code execution enters the block which contains the let or const declaration and continues until the declaration has executed.
+
+In our code example above, Temporal Dead Zone starts after the opening parenthesis of the printAge function and continues until after the declaration of the age variable.
+
+Consider the following code example that illustrates an interesting point about the Temporal Dead Zone.
